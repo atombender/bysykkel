@@ -156,7 +156,7 @@ var Controller = Class.create({
       this.resizeMap();
 
       this.refresh();   
-      window.setInterval(this.refresh.bind(this), 60 * 1000);
+      window.setInterval(this.refresh.bind(this), 2 * 60 * 1000);
     }
   },
 
