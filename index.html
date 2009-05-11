@@ -13,6 +13,9 @@
         background: #222;
         color: #ddd;
       }
+      a:link, a:hover, a:visited, a:active {
+        color: #fff;
+      }
       #map {
         width: 100%;
         height: 100%;
@@ -41,6 +44,10 @@
       body.progressing #progress {
         display: block;
       }            
+      #github_link {
+        float: right;
+        padding: 2px 0;
+      }      
       .info {
         font-size: 8.5pt;
         color: #666;  
@@ -100,6 +107,9 @@
   <body onload="initialize();">
     <span id="progress"><img src="spinner_16.gif"/></span>
     <div id="toolbar">
+      <span id="github_link">
+        <a href="http://github.com/alexstaubo/bysykkel/tree/master">GitHub</a>
+      </span>
       <strong>
         Bysykkelstativer i Oslo
       </strong>
