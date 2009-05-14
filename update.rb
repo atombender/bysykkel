@@ -96,7 +96,7 @@ loop do
   benchmark("Building stats") do
     files = Dir.glob("archive/*.json")
     files.sort
-    files = files[-50..1] if files.length > 50
+    files = files[-50..-1] if files.length > 50
     files.each do |file_name|
       JSON.parse(File.read(file_name)).each do |descriptor|
         s = stats[descriptor["id"]] ||= {}
