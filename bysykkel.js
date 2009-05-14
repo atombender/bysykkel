@@ -132,7 +132,7 @@ var Controller = Class.create({
 
       this.map = new GMap2($("map"));
       this.map.setCenter(state.point, state.zoom);
-      this.map.setMapType(G_HYBRID_MAP);
+      this.map.setMapType(G_NORMAL_MAP);
       this.map.addControl(new GSmallMapControl());
       this.map.addControl(new GMapTypeControl());
 
